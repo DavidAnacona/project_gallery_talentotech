@@ -1,0 +1,89 @@
+#main-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-size {
+  width: 150px;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+  position: relative; /* Necesario para posicionar el figcaption */
+  margin: 0; /* Elimina cualquier margen */
+  padding: 0; /* Elimina cualquier padding */
+}
+
+.father {
+  height: 200px; /* Ajusta la altura del contenedor para acomodar el texto */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; /* Asegura que las miniaturas estén centradas verticalmente */
+  margin: 0; /* Elimina cualquier margen */
+  padding: 0; /* Elimina cualquier padding */
+}
+
+.links {
+  margin: 0; /* Elimina cualquier margen */
+  padding: 0; /* Elimina cualquier padding */
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  box-shadow: 0 2px 2px rgba(0,0, 0,1);
+  transition: all 0.25s;
+}
+
+.links:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0,0, 0,1);
+}
+
+.image-container {
+  width: 100%;
+  height: 950px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0,0, 0,0.8);
+}
+
+figcaption {
+  height: 30px; /* Ajusta la altura del figcaption para que el texto sea legible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejor legibilidad */
+  color: white; /* Color del texto */
+  position: absolute; /* Para que el figcaption esté posicionado dentro del contenedor de la imagen */
+  bottom: 0; /* Posicionar en la parte inferior */
+  width: 100%;
+  margin: 0; /* Elimina cualquier margen */
+  padding: 0; /* Elimina cualquier padding */
+}
+
+figure {
+  justify-content: center;
+  height: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  background: #373B44;
+  background: -webkit-linear-gradient(to right, #4286f4, #373B44);
+  background: linear-gradient(to right, #4286f4, #373B44);
+  position: relative; /* Necesario para el posicionamiento del figcaption */
+  margin: 0; /* Elimina cualquier margen */
+  padding: 0; /* Elimina cualquier padding */
+}
+
+h1#title {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
